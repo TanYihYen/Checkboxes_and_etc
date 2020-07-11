@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="238dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkbox1_chocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chocolate_syrup" />
+
+        <CheckBox
+            android:id="@+id/checkbox2_sprinkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sprinkles" />
+
+        <CheckBox
+            android:id="@+id/checkbox3_nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crushed_nuts" />
+
+        <CheckBox
+            android:id="@+id/checkbox4_cherries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cherries" />
+
+        <CheckBox
+            android:id="@+id/checkbox5_orio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orio"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onSubmit"
+        android:text="@string/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
